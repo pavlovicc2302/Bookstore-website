@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <nav class="navigationPanel">
+       
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="ponuda.html">Ponuda</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <nav class="navigationPanelMobile">
+        <button onclick="burgerClick()" class="burgerIcon"></button>
+        <div id="linksWrap">
+            <a href="index.html">Početna</a>
+            <a href="onama.html">O nama</a>
+            <a href="ponuda.html">Ponuda</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+    <div class="kontakt">
+        <div class="registracija">
+            <form id="forma">
+                <h2>Unesite vaše podatke</h2>
+                Ime: <input id="ime" class="poljaForme" type="text" name="ime" ><br><br>
+                Prezime: <input id="prezime" class="poljaForme" type="text" name="prezime"><br><br>
+                Email: <input id="email" class="poljaForme" type="email" name="email" ><br><br>
+                Adresa: <input id="adresa" class="poljaForme" type="text" name="adresa" ><br><br>
+                Telefon: <input id="telefon" class="poljaForme" type="tel" name="telefon" ><br><br>
+
+
+                Odaberite način plaćanja: <br>
+                <input type="radio" id="pouzece" name="placanje" value="Placanje pouzecem">
+                <label for="pouzece">Plaćanje pouzećem</label><br>
+                <input type="radio" id="mastercard" name="placanje" value="Placanje karticom Mastercard">
+                <label for="mastercard">Plaćanje karticom Mastercard</label><br>
+                <input type="radio" id="dinacard" name="placanje" value="Placanje karticom Dina">
+                <label for="dinacard">Plaćanje karticom Dina</label><br><br>
+
+                <input type="checkbox" name="checkbox" id="checkBox"> Da li zelite da primate e-mejlove
+                <br> sa nasim posebnim ponudama <br><br>
+                
+                <button type="submit" id="posalji" class="dugmeKontakt" value="posalji"
+                    onclick="functionRegistracija()">Pošalji</button>
+                <button id="reset" class="dugmeKontakt" value="izbrisi"
+                    onclick="functionReset()">Resetuj</button>
+
+
+                <br><br>
+            </form>
+        </div>
+        <div class="info">
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.123412406606!2d20.45284931471275!3d44.81905038428039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a654c92a088f1%3A0x23d8999a4181db6e!2z0JrQvdC10LfQsCDQnNC40YXQsNC40LvQsCA0OCwg0JHQtdC-0LPRgNCw0LQgMTEwMDA!5e0!3m2!1ssr!2srs!4v1668424963450!5m2!1ssr!2srs"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>
+                <b>Adresa:</b> Kneza Mihaila 48, Beograd 11000 <br><br>
+                <b>Tel:</b> 011/27-18-456 <br><br>
+                <b>E-mail:</b> info@bookland.rs <br><br>
+                <b>Radno vreme:</b><br>
+                Ponedeljak - Petak: 08h - 20h <br>
+                Subota: 08h - 16h <br>
+                Nedelja: ne radimo <br>
+
+            </p>
+        </div>
+    </div>
+    
+</body>
+
+<br><br><br>
+<footer style="background-color:  #81542add; font-size: 18px;">
+    <div class="footerInformacije">
+        <div class="footerKlasa">
+            <p>
+                <b> Kontakt: </b><br>
+                Tel: 011/27-18-456
+            </p>
+        </div>
+        <div class="footerKlasa">
+            <p>
+                <b>Adresa:</b> <br>
+                Kneza Mihaila 48 <br>
+                11000 Beograd
+            </p>
+        </div>
+        <div class="footerKlasa">
+            <p>
+                <b>Napravili:</b> <br>
+                Ana Pavlović <br>
+                Adrijana Pantić <br>
+                Željana Petrić <br>
+            </p>
+        </div>
+
+        <div class="footerKlasa">
+            <img src="img/fb.png" id="facebook" alt="facebook">
+
+            <img src="img/instagram.png" id="instagram" alt="instagram">
+
+            <img src="img/twitter.png" id="twitter" alt="twitter">
+        </div>
+    </div>
+    <center> Copyright &copy; 2022. All Rights Reserved. Created by Bookland </center>
+</footer>
+<script src="js/kontakt.js"></script>
+<script src="js/comon.js"></script>
+</html>

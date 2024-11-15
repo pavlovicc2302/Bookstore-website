@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/ponuda.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+
+    <title>Trenutno u ponudi</title>
+
+</head>
+
+<body>
+
+    <nav class="navigationPanel"> 
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="ponuda.html">Ponuda</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <nav class="navigationPanelMobile">
+        <button onclick="burgerClick()" class="burgerIcon"></button>
+        <div id="linksWrap">
+            <a href="index.html">Početna</a>
+            <a href="onama.html">O nama</a>
+            <a href="ponuda.html">Ponuda</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- ----------------------------------------------------- -->
+
+    <div>
+        <div class="ponuda-naslov">
+            Pogledajte aktuelnu ponudu!
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------ -->
+
+    <div>
+        <select name="zanr" id="zanr">
+            <option selected disabled> Odaberite žanr</option>
+            <option value="drama"> Drama</option>
+            <option value="fantastika">Fantastika</option>
+            <option value="horor">Horor</option>
+            <option value="klasika">Klasika</option>
+            <option value="ljubavni">Ljubavni</option>
+            <option value="politika">Politika</option>
+            <option value="mitologija">Mitologija</option>
+            <option value="trileri">Trileri</option>
+            <option value="umetnost">Umetnost</option>
+            <option value="za decu">Za decu</option>
+            <option value="tinejdž">Tinejdž</option>
+            <option value="autobiografije i biografije">Autobiografije i biografije</option>
+            <option value="erotika">Erotika</option>
+            <option value="fantastika">Fantastika</option>
+            <option value="istorija">Istorija</option>
+            <option value="komedija">Komedija</option>
+            <option value="poezija">Poezija</option>
+            <option value="kriminalisticki">Kriminalistički</option>
+        </select>
+    </div>
+
+    <!-- ----------------------------------------------------------- -->
+
+    <p class="uvod"> U nastavku izdvajamo tri najčitanija žanra ove godine </p>
+
+    <!-- ----------------------------------------------------------- -->
+
+    <div id="red1">
+        <div class="red-tekst1">
+            <div class="tekst1">
+                <h2>DRAMA</h2>
+                <p> U ponudi imamo veliki izbor knjiga ovog žanra, što omogućava svakom pojedincu da <b>pronadje idealnu
+                        knjigu za sebe.</b>
+                    <br><br>
+                    Pored najnovijih izdanja, u našoj knjižari možete pronaći i nekoliko <b>antikvarnih knjiga </b> iz
+                    oblasti
+                    DRAME, kao što su knjige: <i>"Antigona", "Antonije i Kleopatra", "Romeo i Džulijeta" </i>i mnoge
+                    druge.
+                    <br><br>
+                    Izdvojili smo za Vas listu <b>osam najaktuelnijih knjiga </b> ovoga žanra.
+                <table id="ponuda1" class="ponudaKnjiga">
+                    <tr style="background-color: rgba(216, 175, 145, 0.982);">
+                        <th>Naslov</th>
+                        <th>Autor</th>
+                        <th>Cena</th>
+                    </tr>
+                    <tr>
+                        <td>Doktor D.</td>
+                        <td>Goran Marković</td>
+                        <td class="cenaKnjige">699.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Kradljivica parfema</td>
+                        <td>Timoti Šafert</td>
+                        <td class="cenaKnjige">1199.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>S one bande moje gore</td>
+                        <td>Jasenka Lalović</td>
+                        <td class="cenaKnjige">1299.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Kina - I tom</td>
+                        <td>Edvard Raderfurd</td>
+                        <td class="cenaKnjige">1499.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Ovo vrijeme sada</td>
+                        <td>Semezdin Mehmedović</td>
+                        <td class="cenaKnjige">899.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Mala italijanka</td>
+                        <td>Lusinda Rajli</td>
+                        <td class="cenaKnjige">1299.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Pobednici</td>
+                        <td>Fredrik Bakman</td>
+                        <td class="cenaKnjige">1499.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Muk</td>
+                        <td>Goran Milašinović</td>
+                        <td class="cenaKnjige">899.00 din</td>
+                    </tr>
+                </table>
+                </p>
+                <b>
+                    <p id="promoPonuda1"> Za tri kupljene knjige, obezbedjujemo Vam 15% popusta. </p>
+                </b>
+                <button id="btnRead1" class="btnPonuda" onclick="functionR1()">Pogledaj ponudu...</button>
+            </div>
+        </div>
+        <div class="boxslika1">
+            <img src="img/drama_books.png" id="slike1" alt="Drama">
+        </div>
+    </div>
+
+
+    <div id="red2">
+        <div class="red-tekst2">
+            <div class="tekst2">
+                <h2>LJUBAVNI</h2>
+                <p> U ponudi imamo veliki izbor knjiga ovog žanra, što omogućava svakom pojedincu da <b>pronadje idealnu
+                        knjigu za sebe.</b>
+                    <br><br>
+                    Pored romana o prihvatanju i snazi prave ljubavi kao što je roman <i>Nikolasa Sparska </i>pod
+                    nazivom
+                    <i>"Želja"</i>, u našoj knjižari Vas očekuje još mnoštvo interesantnih likova da <b> zajedno
+                        zakoračite
+                        u još jednu ljubavnu avanturu. </b>
+                    <br><br>
+                    Izdvojili smo za Vas listu <b>osam najaktuelnijih knjiga </b> ovoga žanra.
+                <table id="ponuda2" class="ponudaKnjiga">
+                    <tr style="background-color: rgba(216, 175, 145, 0.982);">
+                        <th>Naslov</th>
+                        <th>Autor</th>
+                        <th>Cena</th>
+                    </tr>
+                    <tr>
+                        <td>Mala italijanka</td>
+                        <td>Lusinda Rajli</td>
+                        <td class="cenaKnjige">1299.00 din</td>
+
+                    </tr>
+                    <tr>
+                        <td>U potrazi za Napoleonom</td>
+                        <td>Margaret Rodenberg</td>
+                        <td class="cenaKnjige">1169.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Sindrom slomljenog srca</td>
+                        <td>Salome Bodino</td>
+                        <td class="cenaKnjige">899.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Hvala, gospodine Diore</td>
+                        <td>Anjes Gabrijel</td>
+                        <td class="cenaKnjige"> 1099.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Ja, Mona Liza</td>
+                        <td>Nataša Solomons</td>
+                        <td class="cenaKnjige"> 989.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Tajne sa plantaže čaja</td>
+                        <td>Dženet Maklaund Troter</td>
+                        <td class="cenaKnjige"> 1619.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Srce kao ulog</td>
+                        <td>Simona Arnstet</td>
+                        <td class="cenaKnjige">999.00 din.</td>
+                    </tr>
+                    <tr>
+                        <td>Nana</td>
+                        <td>Emil Zola</td>
+                        <td class="cenaKnjige">1099.00 din</td>
+                    </tr>
+                </table>
+                </p>
+
+                <b>
+                    <p id="promoPonuda2"> Za tri kupljene knjige, obezbedjujemo Vam 15% popusta. </p>
+                </b>
+                <button id="btnRead2" class="btnPonuda" onclick="functionR2()">Pogledaj ponudu...</button>
+            </div>
+        </div>
+        <div class="boxslika2">
+            <img src="img/love_novels.png" id="slike2" alt="Ljubavni">
+        </div>
+    </div>
+
+    <div id="red3">
+        <div class="red-tekst3">
+            <div class="tekst3">
+                <h2>KRIMINALISTIČKI</h2>
+                <p> U ponudi imamo veliki izbor knjiga ovog žanra, što omogućava svakom pojedincu da <b>pronadje idealnu
+                        knjigu za sebe.</b>
+                    <br><br>
+                    Ukoliko ste spremni da <b>zakoračite u život misterioznih likova i otkrijete njihove tajne </b>,
+                    onda imamo
+                    pravu ponudu za Vas. U našoj knjižari možete pronaći veliki broj kriminalističkih romana, pri čemu
+                    posebno izdvajamo romane dobro poznate <i> Agate Kristi </i>.
+                    <br><br>
+                    Izdvojili smo za Vas listu <b>osam najaktuelnijih knjiga </b> ovoga žanra.
+                <table id="ponuda3" class="ponudaKnjiga">
+                    <tr style="background-color: rgba(216, 175, 145, 0.982);">
+                        <th>Naslov</th>
+                        <th>Autor</th>
+                        <th>Cena</th>
+                    </tr>
+                    <tr>
+                        <td>Tragedija u tri čina</td>
+                        <td>Agata Kristi</td>
+                        <td class="cenaKnjige">1099.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Krvava žena</td>
+                        <td>Dešijel Hemet</td>
+                        <td class="cenaKnjige">699.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Karte na sto</td>
+                        <td>Agata Kristi</td>
+                        <td class="cenaKnjige">899.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Linda</td>
+                        <td>Lejf G. V. Pešon</td>
+                        <td class="cenaKnjige">989.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Sastanak sa smrću</td>
+                        <td>Agata Kristi</td>
+                        <td class="cenaKnjige">1119.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Smrt u oblacima</td>
+                        <td>Agata Kristi</td>
+                        <td class="cenaKnjige">779.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Ubistvo u parohijskom dvoru</td>
+                        <td>Agata Kristi</td>
+                        <td class="cenaKnjige">799.00 din</td>
+                    </tr>
+                    <tr>
+                        <td>Nevidljivi čuvar</td>
+                        <td>Dolores Redondo</td>
+                        <td class="cenaKnjige">1099.00 din</td>
+                    </tr>
+                </table>
+                </p>
+                <b>
+                    <p id="promoPonuda3"> Za tri kupljene knjige, obezbedjujemo Vam 15% popusta. </p>
+                </b>
+                <button id="btnRead3" class="btnPonuda" onclick="functionR3()">Pogledaj ponudu...</button>
+            </div>
+        </div>
+        <div class="boxslika3">
+            <img src="img/crime_novels.png" id="slike3" alt="Krimi">
+        </div>
+    </div>
+
+</body>
+
+<br><br><br>
+<footer style="background-color:  #81542add; font-size: 18px;">
+    <div class="footerInformacije">
+        <div class="footerKlasa">
+            <p>
+                <b> Kontakt: </b><br>
+                Tel: 011/27-18-456
+            </p>
+        </div>
+        <div class="footerKlasa">
+            <p>
+                <b>Adresa:</b> <br>
+                Kneza Mihaila 48 <br>
+                11000 Beograd
+            </p>
+        </div>
+        <div class="footerKlasa">
+            <p>
+                <b>Napravili:</b> <br>
+                Ana Pavlović <br>
+                Adrijana Pantić <br>
+                Željana Petrić <br>
+            </p>
+        </div>
+
+        <div class="footerKlasa">
+            <img src="img/fb.png" id="facebook" alt="facebook" >
+
+            <img src="img/instagram.png" id="instagram" alt="instagram">
+
+            <img src="img/twitter.png" id="twitter" alt="twitter">
+        </div>
+    </div>
+    <center> Copyright &copy; 2022. All Rights Reserved. Created by Bookland </center>
+</footer>
+<script src="js/ponuda.js"></script>
+    
+<script src="js/comon.js"></script>
+</html>

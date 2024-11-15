@@ -1,0 +1,242 @@
+
+*{
+    color:#21170b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../img/pozadina.jpg);
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #8e572478;
+    
+}
+nav ul{
+    text-align: center;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px;
+    line-height: 100px;
+    font-size: 30px;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 0 20px;
+    display: block;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    padding: 0 20px;
+    display: block;
+}
+
+/* ----------------------------------------------- */
+
+.ponuda-naslov{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 40px;
+    text-align: center;
+    background-color: #8e572478;
+    border: 3px solid rgb(61, 42, 28);
+}
+
+/* ----------------------------------------------- */
+
+
+select{
+    background: rgba(255, 255, 255, 0.773);
+    height: 30px;
+    margin: 40px;
+    width: fit-content;
+    border: 3px solid rgb(61, 42, 28);
+    color: rgb(61, 42, 28);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* ------------------------------------------------ */
+
+.uvod{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ------------------------------------------------ */
+
+#red1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.red-tekst1{
+    width: 50%;
+    background-color: #8e572478;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    padding: 30px;
+    border: 3px solid rgb(92, 44, 9);
+    border-radius: 30px ;
+    color: rgb(61, 42, 28);
+}
+
+.tekst1{
+    font-size: 25px;
+    color: rgb(61, 42, 28);
+}
+
+#slike1{
+    margin: 60px 40px 60px 40px;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #685039;
+    border-radius: 30px;
+}
+
+
+#red2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.red-tekst2{
+    width: 50%;
+    background-color: #8e572478;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    padding: 30px;
+    border: 3px solid rgb(92, 44, 9);
+    border-radius: 30px ;
+    color: rgb(61, 42, 28);
+}
+
+.tekst2{
+    font-size: 25px;
+    color: rgb(61, 42, 28);
+}
+
+#slike2{
+    margin: 60px 40px 60px 40px;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #685039;
+    border-radius: 30px;
+}
+
+
+#red3{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.red-tekst3{
+    width: 50%;
+    background-color: #8e572478;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    padding: 30px;
+    border: 3px solid rgb(92, 44, 9);
+    border-radius: 30px ;
+    color: rgb(61, 42, 28);
+}
+
+.tekst3{
+    font-size: 25px;
+    color: rgb(61, 42, 28);
+}
+
+#slike3{
+    margin: 60px 40px 60px 40px;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #685039;
+    border-radius: 30px;
+}
+
+/* ------------------------------------------------------- */
+
+.ponudaKnjiga th{
+    border: 3px solid rgb(68, 57, 40);    
+}
+.ponudaKnjiga td{
+    background-color:rgba(216, 175, 145, 0.439);;
+    width: 300px;
+    border: 1px solid rgb(68, 57, 40);
+    text-indent: 10px;
+}
+.ponudaKnjiga{
+    border-spacing: 5px;
+    
+}
+.cenaKnjige{
+    text-align: center;
+}
+
+.btnPonuda{
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+
+.btnPonuda:hover{
+    cursor: pointer;
+    background: linear-gradient(315deg, #233e4e 0%, #20404e 74%);
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+
+}
+
+.footerInformacije{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerKlasa img{
+    width: 50px;
+    height: 70px;
+    padding-top: 35px;
+    padding-left: 5px;
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    #slike1, #slike2, #slike3 {
+        max-width: 90%;
+        width: 90%;
+        margin: 0;
+    }
+
+.red-tekst1, .red-tekst2, .red-tekst3 {
+    width: 100%;
+    margin: 0;
+}
+
+}
